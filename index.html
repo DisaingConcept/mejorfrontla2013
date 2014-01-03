@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <!-- Esta se encargara de hacer la magia del Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mi aplicacion: Pulse5</title>
+        <!-- Esta se encargara de añadir la descripción de mi pagina y es tomada por los resultado de google (no pasar de los 140 caracteres) -->
+        <meta name="description" content="Mi primera aplicacion, pagina de inicio">       
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+ 
+        <!-- Esta etiqueta traerá a normalize.css, y quiero hacer una pausa aquí, Normalmente los navegadores tienen tamaños de fuentes, margins, paddings, etc.
+        predefinidos para cada etiqueta, pero esto no es un estándar entre navegadores lo cual causa un dolor de cabeza a los desarrolladores,
+        así que normalize se encarga de normalizar todas las medidas para que sea más fácil desarrollar, lo debes descargar de de aquí. -->
+        <link rel="stylesheet" href="css/normalize.css">
+        
+        <!-- Traemos nuestra hoja de estilos propia -->
+        <link rel="stylesheet" href="css/pulse5.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">Usted está usando un <strong>navegador desactualizado</strong>. Por favor, <a href="http://browsehappy.com/">actualice su navegador</a> para mejorar su experiencia de usuario. ;)</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <header>
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="Pulse 5 Logo" />
+            </div>
+            <div class="titular">
+                <h1 class=""título> Pulse5: Comunidad Interactiva</h1>
+                <div>
+                    <a class="filtro" href="#">Responsive Design</a>
+                    <a class="publicar" href="#">Publicar</a>
+                </div>
+            </div>
+            <div class="usuario">
+                <figure class="avatar">
+                    <img src="imagenes/avatar.jpg" alt="avatar usuario" />
+                </figure>
+                <a class="flechita" href="#">
+                    X
+                </a>
+            </div>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Python</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">Javascript</a></li>
+                <li><a href="#">Django</a></li>
+                <li><a href="#">Css3</a></li>
+            </ul>
+        </nav>
+        <section class="posts">
+            <article class="post">
+                <div class="descripcion">
+                    <figure class="imagen">
+                        <img src="imagenes/foto.jpg" />
+                    </figure>
+                    <div class="detalles">
+                        <h2 class="titulo">
+                            Colores, gradientes y un título bkn!
+                        </h2>
+                        <p class="autor">
+                            por <a href="#">Autor Anónimo</a>
+                        </p>
+                        <a class="tag" href="#"></a>
+                        <p class="fecha">
+                            hace <strong>20</strong>min
+                        </p>
+                    </div>
+                </div>
+                <div class="acciones">
+                    <div class="votos">
+                        <a class="up" href="#">U</a>
+                        <span class="total">156</span>
+                        <a class="down" href="#">D</a>
+                    </div>
+                    <div class="datos">
+                        <a class="comentarios" href="#">10</a>
+                        <a class="estrellita" href="#">*</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <footer>
+            <h3>
+                <strong>Powered by Platzi</strong>
+                <span class="mejor"> mejorando.la 2013</span>
+            </h3>
+        </footer>
+        <!-- Acá comenzamos a añadir las librerías JavaScript, antes de cerrar el body, y después del contenido del sitio o aplicación -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <!-- Y por último agregaremos a modernizr -->
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <!-- A lo ultimo del documento antes de cerrar el body llamamos a nuestro archivo de js en donde colocaremos
+        la usabilidad de la app: -->
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
+
+
